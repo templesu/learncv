@@ -1,0 +1,3 @@
+C:/Users/bysu/Desktop/learnCV/build/CMakeFiles/learnCV.dir
+C:/Users/bysu/Desktop/learnCV/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/bysu/Desktop/learnCV/build/CMakeFiles/ZERO_CHECK.dir

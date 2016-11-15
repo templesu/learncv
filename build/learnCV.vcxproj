@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{31EB76D9-ACE2-3D22-9A31-667879A1E4A1}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>learnCV</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\bysu\Desktop\learnCV\build\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">learnCV.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">learnCV</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\bysu\Desktop\learnCV\build\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">learnCV.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">learnCV</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\bysu\Desktop\learnCV\build\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">learnCV.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">learnCV</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\bysu\Desktop\learnCV\build\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">learnCV.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">learnCV</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\opencv\build;C:\opencv\sources\include;C:\opencv\sources\include\opencv;C:\opencv\sources\modules\core\include;C:\opencv\sources\modules\flann\include;C:\opencv\sources\modules\imgproc\include;C:\opencv\sources\modules\ml\include;C:\opencv\sources\modules\photo\include;C:\opencv\sources\modules\video\include;C:\opencv\sources\modules\imgcodecs\include;C:\opencv\sources\modules\shape\include;C:\opencv\sources\modules\videoio\include;C:\opencv\sources\modules\highgui\include;C:\opencv\sources\modules\objdetect\include;C:\opencv\sources\modules\superres\include;C:\opencv\sources\modules\ts\include;C:\opencv\sources\modules\features2d\include;C:\opencv\sources\modules\calib3d\include;C:\opencv\sources\modules\stitching\include;C:\opencv\sources\modules\videostab\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\opencv\build;C:\opencv\sources\include;C:\opencv\sources\include\opencv;C:\opencv\sources\modules\core\include;C:\opencv\sources\modules\flann\include;C:\opencv\sources\modules\imgproc\include;C:\opencv\sources\modules\ml\include;C:\opencv\sources\modules\photo\include;C:\opencv\sources\modules\video\include;C:\opencv\sources\modules\imgcodecs\include;C:\opencv\sources\modules\shape\include;C:\opencv\sources\modules\videoio\include;C:\opencv\sources\modules\highgui\include;C:\opencv\sources\modules\objdetect\include;C:\opencv\sources\modules\superres\include;C:\opencv\sources\modules\ts\include;C:\opencv\sources\modules\features2d\include;C:\opencv\sources\modules\calib3d\include;C:\opencv\sources\modules\stitching\include;C:\opencv\sources\modules\videostab\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\opencv\build;C:\opencv\sources\include;C:\opencv\sources\include\opencv;C:\opencv\sources\modules\core\include;C:\opencv\sources\modules\flann\include;C:\opencv\sources\modules\imgproc\include;C:\opencv\sources\modules\ml\include;C:\opencv\sources\modules\photo\include;C:\opencv\sources\modules\video\include;C:\opencv\sources\modules\imgcodecs\include;C:\opencv\sources\modules\shape\include;C:\opencv\sources\modules\videoio\include;C:\opencv\sources\modules\highgui\include;C:\opencv\sources\modules\objdetect\include;C:\opencv\sources\modules\superres\include;C:\opencv\sources\modules\ts\include;C:\opencv\sources\modules\features2d\include;C:\opencv\sources\modules\calib3d\include;C:\opencv\sources\modules\stitching\include;C:\opencv\sources\modules\videostab\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\opencv\build\lib\Debug\opencv_videostab310d.lib;C:\opencv\build\lib\Debug\opencv_superres310d.lib;C:\opencv\build\lib\Debug\opencv_stitching310d.lib;C:\opencv\build\lib\Debug\opencv_shape310d.lib;C:\opencv\build\lib\Debug\opencv_photo310d.lib;C:\opencv\build\lib\Debug\opencv_objdetect310d.lib;C:\opencv\build\lib\Debug\opencv_calib3d310d.lib;C:\opencv\build\lib\Debug\opencv_features2d310d.lib;C:\opencv\build\lib\Debug\opencv_ml310d.lib;C:\opencv\build\lib\Debug\opencv_highgui310d.lib;C:\opencv\build\lib\Debug\opencv_videoio310d.lib;C:\opencv\build\lib\Debug\opencv_imgcodecs310d.lib;C:\opencv\build\lib\Debug\opencv_flann310d.lib;C:\opencv\build\lib\Debug\opencv_video310d.lib;C:\opencv\build\lib\Debug\opencv_imgproc310d.lib;C:\opencv\build\lib\Debug\opencv_core310d.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/bysu/Desktop/learnCV/build/Debug/learnCV.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/bysu/Desktop/learnCV/build/Debug/learnCV.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\opencv\build;C:\opencv\sources\include;C:\opencv\sources\include\opencv;C:\opencv\sources\modules\core\include;C:\opencv\sources\modules\flann\include;C:\opencv\sources\modules\imgproc\include;C:\opencv\sources\modules\ml\include;C:\opencv\sources\modules\photo\include;C:\opencv\sources\modules\video\include;C:\opencv\sources\modules\imgcodecs\include;C:\opencv\sources\modules\shape\include;C:\opencv\sources\modules\videoio\include;C:\opencv\sources\modules\highgui\include;C:\opencv\sources\modules\objdetect\include;C:\opencv\sources\modules\superres\include;C:\opencv\sources\modules\ts\include;C:\opencv\sources\modules\features2d\include;C:\opencv\sources\modules\calib3d\include;C:\opencv\sources\modules\stitching\include;C:\opencv\sources\modules\videostab\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\opencv\build;C:\opencv\sources\include;C:\opencv\sources\include\opencv;C:\opencv\sources\modules\core\include;C:\opencv\sources\modules\flann\include;C:\opencv\sources\modules\imgproc\include;C:\opencv\sources\modules\ml\include;C:\opencv\sources\modules\photo\include;C:\opencv\sources\modules\video\include;C:\opencv\sources\modules\imgcodecs\include;C:\opencv\sources\modules\shape\include;C:\opencv\sources\modules\videoio\include;C:\opencv\sources\modules\highgui\include;C:\opencv\sources\modules\objdetect\include;C:\opencv\sources\modules\superres\include;C:\opencv\sources\modules\ts\include;C:\opencv\sources\modules\features2d\include;C:\opencv\sources\modules\calib3d\include;C:\opencv\sources\modules\stitching\include;C:\opencv\sources\modules\videostab\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\opencv\build;C:\opencv\sources\include;C:\opencv\sources\include\opencv;C:\opencv\sources\modules\core\include;C:\opencv\sources\modules\flann\include;C:\opencv\sources\modules\imgproc\include;C:\opencv\sources\modules\ml\include;C:\opencv\sources\modules\photo\include;C:\opencv\sources\modules\video\include;C:\opencv\sources\modules\imgcodecs\include;C:\opencv\sources\modules\shape\include;C:\opencv\sources\modules\videoio\include;C:\opencv\sources\modules\highgui\include;C:\opencv\sources\modules\objdetect\include;C:\opencv\sources\modules\superres\include;C:\opencv\sources\modules\ts\include;C:\opencv\sources\modules\features2d\include;C:\opencv\sources\modules\calib3d\include;C:\opencv\sources\modules\stitching\include;C:\opencv\sources\modules\videostab\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\opencv\build\lib\Release\opencv_videostab310.lib;C:\opencv\build\lib\Release\opencv_superres310.lib;C:\opencv\build\lib\Release\opencv_stitching310.lib;C:\opencv\build\lib\Release\opencv_shape310.lib;C:\opencv\build\lib\Release\opencv_photo310.lib;C:\opencv\build\lib\Release\opencv_objdetect310.lib;C:\opencv\build\lib\Release\opencv_calib3d310.lib;C:\opencv\build\lib\Release\opencv_features2d310.lib;C:\opencv\build\lib\Release\opencv_ml310.lib;C:\opencv\build\lib\Release\opencv_highgui310.lib;C:\opencv\build\lib\Release\opencv_videoio310.lib;C:\opencv\build\lib\Release\opencv_imgcodecs310.lib;C:\opencv\build\lib\Release\opencv_flann310.lib;C:\opencv\build\lib\Release\opencv_video310.lib;C:\opencv\build\lib\Release\opencv_imgproc310.lib;C:\opencv\build\lib\Release\opencv_core310.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/bysu/Desktop/learnCV/build/Release/learnCV.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/bysu/Desktop/learnCV/build/Release/learnCV.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\opencv\build;C:\opencv\sources\include;C:\opencv\sources\include\opencv;C:\opencv\sources\modules\core\include;C:\opencv\sources\modules\flann\include;C:\opencv\sources\modules\imgproc\include;C:\opencv\sources\modules\ml\include;C:\opencv\sources\modules\photo\include;C:\opencv\sources\modules\video\include;C:\opencv\sources\modules\imgcodecs\include;C:\opencv\sources\modules\shape\include;C:\opencv\sources\modules\videoio\include;C:\opencv\sources\modules\highgui\include;C:\opencv\sources\modules\objdetect\include;C:\opencv\sources\modules\superres\include;C:\opencv\sources\modules\ts\include;C:\opencv\sources\modules\features2d\include;C:\opencv\sources\modules\calib3d\include;C:\opencv\sources\modules\stitching\include;C:\opencv\sources\modules\videostab\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\opencv\build;C:\opencv\sources\include;C:\opencv\sources\include\opencv;C:\opencv\sources\modules\core\include;C:\opencv\sources\modules\flann\include;C:\opencv\sources\modules\imgproc\include;C:\opencv\sources\modules\ml\include;C:\opencv\sources\modules\photo\include;C:\opencv\sources\modules\video\include;C:\opencv\sources\modules\imgcodecs\include;C:\opencv\sources\modules\shape\include;C:\opencv\sources\modules\videoio\include;C:\opencv\sources\modules\highgui\include;C:\opencv\sources\modules\objdetect\include;C:\opencv\sources\modules\superres\include;C:\opencv\sources\modules\ts\include;C:\opencv\sources\modules\features2d\include;C:\opencv\sources\modules\calib3d\include;C:\opencv\sources\modules\stitching\include;C:\opencv\sources\modules\videostab\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\opencv\build;C:\opencv\sources\include;C:\opencv\sources\include\opencv;C:\opencv\sources\modules\core\include;C:\opencv\sources\modules\flann\include;C:\opencv\sources\modules\imgproc\include;C:\opencv\sources\modules\ml\include;C:\opencv\sources\modules\photo\include;C:\opencv\sources\modules\video\include;C:\opencv\sources\modules\imgcodecs\include;C:\opencv\sources\modules\shape\include;C:\opencv\sources\modules\videoio\include;C:\opencv\sources\modules\highgui\include;C:\opencv\sources\modules\objdetect\include;C:\opencv\sources\modules\superres\include;C:\opencv\sources\modules\ts\include;C:\opencv\sources\modules\features2d\include;C:\opencv\sources\modules\calib3d\include;C:\opencv\sources\modules\stitching\include;C:\opencv\sources\modules\videostab\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\opencv\build\lib\Debug\opencv_videostab310d.lib;C:\opencv\build\lib\Debug\opencv_superres310d.lib;C:\opencv\build\lib\Debug\opencv_stitching310d.lib;C:\opencv\build\lib\Debug\opencv_shape310d.lib;C:\opencv\build\lib\Debug\opencv_photo310d.lib;C:\opencv\build\lib\Debug\opencv_objdetect310d.lib;C:\opencv\build\lib\Debug\opencv_calib3d310d.lib;C:\opencv\build\lib\Debug\opencv_features2d310d.lib;C:\opencv\build\lib\Debug\opencv_ml310d.lib;C:\opencv\build\lib\Debug\opencv_highgui310d.lib;C:\opencv\build\lib\Debug\opencv_videoio310d.lib;C:\opencv\build\lib\Debug\opencv_imgcodecs310d.lib;C:\opencv\build\lib\Debug\opencv_flann310d.lib;C:\opencv\build\lib\Debug\opencv_video310d.lib;C:\opencv\build\lib\Debug\opencv_imgproc310d.lib;C:\opencv\build\lib\Debug\opencv_core310d.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/bysu/Desktop/learnCV/build/MinSizeRel/learnCV.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/bysu/Desktop/learnCV/build/MinSizeRel/learnCV.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\opencv\build;C:\opencv\sources\include;C:\opencv\sources\include\opencv;C:\opencv\sources\modules\core\include;C:\opencv\sources\modules\flann\include;C:\opencv\sources\modules\imgproc\include;C:\opencv\sources\modules\ml\include;C:\opencv\sources\modules\photo\include;C:\opencv\sources\modules\video\include;C:\opencv\sources\modules\imgcodecs\include;C:\opencv\sources\modules\shape\include;C:\opencv\sources\modules\videoio\include;C:\opencv\sources\modules\highgui\include;C:\opencv\sources\modules\objdetect\include;C:\opencv\sources\modules\superres\include;C:\opencv\sources\modules\ts\include;C:\opencv\sources\modules\features2d\include;C:\opencv\sources\modules\calib3d\include;C:\opencv\sources\modules\stitching\include;C:\opencv\sources\modules\videostab\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\opencv\build;C:\opencv\sources\include;C:\opencv\sources\include\opencv;C:\opencv\sources\modules\core\include;C:\opencv\sources\modules\flann\include;C:\opencv\sources\modules\imgproc\include;C:\opencv\sources\modules\ml\include;C:\opencv\sources\modules\photo\include;C:\opencv\sources\modules\video\include;C:\opencv\sources\modules\imgcodecs\include;C:\opencv\sources\modules\shape\include;C:\opencv\sources\modules\videoio\include;C:\opencv\sources\modules\highgui\include;C:\opencv\sources\modules\objdetect\include;C:\opencv\sources\modules\superres\include;C:\opencv\sources\modules\ts\include;C:\opencv\sources\modules\features2d\include;C:\opencv\sources\modules\calib3d\include;C:\opencv\sources\modules\stitching\include;C:\opencv\sources\modules\videostab\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\opencv\build;C:\opencv\sources\include;C:\opencv\sources\include\opencv;C:\opencv\sources\modules\core\include;C:\opencv\sources\modules\flann\include;C:\opencv\sources\modules\imgproc\include;C:\opencv\sources\modules\ml\include;C:\opencv\sources\modules\photo\include;C:\opencv\sources\modules\video\include;C:\opencv\sources\modules\imgcodecs\include;C:\opencv\sources\modules\shape\include;C:\opencv\sources\modules\videoio\include;C:\opencv\sources\modules\highgui\include;C:\opencv\sources\modules\objdetect\include;C:\opencv\sources\modules\superres\include;C:\opencv\sources\modules\ts\include;C:\opencv\sources\modules\features2d\include;C:\opencv\sources\modules\calib3d\include;C:\opencv\sources\modules\stitching\include;C:\opencv\sources\modules\videostab\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\opencv\build\lib\Debug\opencv_videostab310d.lib;C:\opencv\build\lib\Debug\opencv_superres310d.lib;C:\opencv\build\lib\Debug\opencv_stitching310d.lib;C:\opencv\build\lib\Debug\opencv_shape310d.lib;C:\opencv\build\lib\Debug\opencv_photo310d.lib;C:\opencv\build\lib\Debug\opencv_objdetect310d.lib;C:\opencv\build\lib\Debug\opencv_calib3d310d.lib;C:\opencv\build\lib\Debug\opencv_features2d310d.lib;C:\opencv\build\lib\Debug\opencv_ml310d.lib;C:\opencv\build\lib\Debug\opencv_highgui310d.lib;C:\opencv\build\lib\Debug\opencv_videoio310d.lib;C:\opencv\build\lib\Debug\opencv_imgcodecs310d.lib;C:\opencv\build\lib\Debug\opencv_flann310d.lib;C:\opencv\build\lib\Debug\opencv_video310d.lib;C:\opencv\build\lib\Debug\opencv_imgproc310d.lib;C:\opencv\build\lib\Debug\opencv_core310d.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/bysu/Desktop/learnCV/build/RelWithDebInfo/learnCV.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/bysu/Desktop/learnCV/build/RelWithDebInfo/learnCV.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\bysu\Desktop\learnCV\source\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/bysu/Desktop/learnCV/source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/bysu/Desktop/learnCV/source -BC:/Users/bysu/Desktop/learnCV/build --check-stamp-file C:\Users\bysu\Desktop\learnCV\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/bysu/Desktop/learnCV/source/CMakeLists.txt;C:\Users\bysu\Desktop\learnCV\source\CMakeLists.txt;C:\Users\bysu\Desktop\learnCV\build\CMakeFiles\3.7.0\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\bysu\Desktop\learnCV\build\CMakeFiles\3.7.0\CMakeCCompiler.cmake;C:\Users\bysu\Desktop\learnCV\build\CMakeFiles\3.7.0\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\Users\bysu\Desktop\learnCV\build\CMakeFiles\3.7.0\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\opencv\build\OpenCVConfig-version.cmake;C:\opencv\build\OpenCVConfig.cmake;C:\opencv\build\OpenCVModules.cmake;C:\Users\bysu\Desktop\learnCV\source\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\bysu\Desktop\learnCV\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/bysu/Desktop/learnCV/source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/bysu/Desktop/learnCV/source -BC:/Users/bysu/Desktop/learnCV/build --check-stamp-file C:\Users\bysu\Desktop\learnCV\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/bysu/Desktop/learnCV/source/CMakeLists.txt;C:\Users\bysu\Desktop\learnCV\source\CMakeLists.txt;C:\Users\bysu\Desktop\learnCV\build\CMakeFiles\3.7.0\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\bysu\Desktop\learnCV\build\CMakeFiles\3.7.0\CMakeCCompiler.cmake;C:\Users\bysu\Desktop\learnCV\build\CMakeFiles\3.7.0\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\Users\bysu\Desktop\learnCV\build\CMakeFiles\3.7.0\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\opencv\build\OpenCVConfig-version.cmake;C:\opencv\build\OpenCVConfig.cmake;C:\opencv\build\OpenCVModules.cmake;C:\Users\bysu\Desktop\learnCV\source\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\bysu\Desktop\learnCV\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/bysu/Desktop/learnCV/source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/bysu/Desktop/learnCV/source -BC:/Users/bysu/Desktop/learnCV/build --check-stamp-file C:\Users\bysu\Desktop\learnCV\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/bysu/Desktop/learnCV/source/CMakeLists.txt;C:\Users\bysu\Desktop\learnCV\source\CMakeLists.txt;C:\Users\bysu\Desktop\learnCV\build\CMakeFiles\3.7.0\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\bysu\Desktop\learnCV\build\CMakeFiles\3.7.0\CMakeCCompiler.cmake;C:\Users\bysu\Desktop\learnCV\build\CMakeFiles\3.7.0\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\Users\bysu\Desktop\learnCV\build\CMakeFiles\3.7.0\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\opencv\build\OpenCVConfig-version.cmake;C:\opencv\build\OpenCVConfig.cmake;C:\opencv\build\OpenCVModules.cmake;C:\Users\bysu\Desktop\learnCV\source\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\bysu\Desktop\learnCV\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/bysu/Desktop/learnCV/source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/bysu/Desktop/learnCV/source -BC:/Users/bysu/Desktop/learnCV/build --check-stamp-file C:\Users\bysu\Desktop\learnCV\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/bysu/Desktop/learnCV/source/CMakeLists.txt;C:\Users\bysu\Desktop\learnCV\source\CMakeLists.txt;C:\Users\bysu\Desktop\learnCV\build\CMakeFiles\3.7.0\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\bysu\Desktop\learnCV\build\CMakeFiles\3.7.0\CMakeCCompiler.cmake;C:\Users\bysu\Desktop\learnCV\build\CMakeFiles\3.7.0\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\Users\bysu\Desktop\learnCV\build\CMakeFiles\3.7.0\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\opencv\build\OpenCVConfig-version.cmake;C:\opencv\build\OpenCVConfig.cmake;C:\opencv\build\OpenCVModules.cmake;C:\Users\bysu\Desktop\learnCV\source\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\bysu\Desktop\learnCV\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\bysu\Desktop\learnCV\source\learnCV.cpp"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Users/bysu/Desktop/learnCV/build/ZERO_CHECK.vcxproj">
+      <Project>60539266-AACD-31E2-9066-72126A610A3A</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
